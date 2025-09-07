@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barriecito&family=Zilla+Slab+Highlight:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>E-Book</title>
+</head>
+
+<body>
+    <section id="cover" class="page active">
+        <button id="startBtn" title="Start"></button>
+    </section>
+
+    <section id="lesson1" class="page">
+        <button id="nextBtn1" title="Next" class="bottom-right-btn"> <svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="40px" fill="#e3e3e3">
+                <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+            </svg></button>
+        <button id="backBtn1" title="Back" class="bottom-left-btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
+            </svg></button>
+    </section>
+
+    <section id="lesson" class="page">
+        <div class="controls">
+            <button id="playPauseBtn" title="Play">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#e3e3e3">
+                    <path
+                        d="M169-227q-42-52-65.5-116.5T80-480q0-157 103.5-270T440-878v80q-120 14-200 104t-80 214q0 56 17 105.5t49 90.5l-57 57ZM480-80q-73 0-138-24t-117-67l56-57q41 32 91.5 50T480-160q57 0 107.5-18t91.5-50l56 57q-52 43-117 67T480-80Zm311-147-57-57q32-41 49-90.5T800-480q0-124-80-214T520-798v-80q153 15 256.5 128T880-480q0 72-23.5 136.5T791-227Zm-411-73v-360l280 180-280 180Z" />
+                </svg>
+            </button>
+            <audio id="lessonAudio" src="assets/audio/Task Audio.mp3"></audio>
+        </div>
+        <button id="nextBtn" title="Next" class="bottom-right-btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                viewBox="0 -960 960 960" width="40px" fill="#e3e3e3">
+                <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+            </svg></button>
+        <button id="backBtn" title="Back" class="bottom-left-btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
+            </svg></button>
+    </section>
+
+    <section id="quiz" class="page">
+
+        <div class="popup" id="resultPopup" style="display: none;">
+            <div class="popup-content" id="resultText">Try again!</div>
+            <button id="closePopup">OK</button>
+        </div>
+
+        <div class="question">
+
+            <button class="answer" data-correct="true" id="answer1" title="answer"></button>
+            <button class="answer" data-correct="false" id="answer2" title="answer"></button>
+            <button class="answer" data-correct="false" id="answer3" title="answer"></button>
+        </div>
+        <div class="question">
+
+            <button class="answer" data-correct="false" id="q2-answer1" title="answer"></button>
+            <button class="answer" data-correct="true" id="q2-answer2" title="answer"></button>
+            <button class="answer" data-correct="false" id="q2-answer3" title="answer"></button>
+        </div>
+        <div class="question">
+
+            <button class="answer" data-correct="false" id="q3-answer1" title="answer"></button>
+            <button class="answer" data-correct="false" id="q3-answer2" title="answer"></button>
+            <button class="answer" data-correct="true" id="q3-answer3" title="answer"></button>
+        </div>
+
+
+        <button id="backBtn2" title="Back" class="bottom-left-btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
+            </svg></button>
+    </section>
+
+</body>
+<script src="./js/main.js"></script>
+<script src="./js/audio.js"></script>
+<script src="./js/quiz.js"></script>
+
+</html>

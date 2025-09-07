@@ -1,0 +1,242 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #f9f9f9;
+    height: 2000px;
+    overflow-x: hidden;
+
+}
+
+.page {
+    display: none;
+    position: static;
+    top: 0;
+    left: 0;
+}
+
+.page.active {
+    display: block;
+}
+
+#cover {
+    width: 100vw;
+    height: 2000px;
+    background-image: url(../assets/Task\ Book_page-0001.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+#lesson1 {
+    width: 100vw;
+    height: 2000px;
+    background-image: url(../assets/Task\ Book_page-0002.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5px;
+}
+
+#lesson {
+    width: 100vw;
+    height: 2000px;
+    background-image: url(../assets/Task\ Book_page-0003.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5px;
+}
+
+#quiz {
+    width: 100vw;
+    height: 2000px;
+    background-image: url(../assets/Task\ Book_page-0004.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5px;
+}
+
+.pdf-viewer {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#startBtn {
+    position: relative;
+    align-items: center;
+    top: 1657px;
+    left: 200px;
+    height: 232px;
+    width: 205px;
+    border-radius: 86% 64% 95% 72%;
+    background: transparent;
+}
+
+#startBtn::after {
+    content: "Click To Start";
+    width: 100px;
+    height: 30px;
+    padding: 20px;
+    background-color: #fff;
+    color: #007bff;
+    border-radius: 10px;
+    position: absolute;
+    left: 245px;
+    top: 75px;
+    align-content: center;
+}
+
+#startBtn::before {
+    content: "";
+    padding: 10px;
+    transform: rotate(50deg);
+    background-color: #fff;
+    color: #007bff;
+    position: absolute;
+    left: 237px;
+    top: 100px;
+}
+
+.bottom-right-btn {
+    position: relative;
+    top: 1800px;
+    left: 500px;
+    padding: 20px;
+}
+
+.bottom-left-btn {
+    position: relative;
+    width: 80px;
+    top: 1800px;
+    left: -500px;
+    padding: 20px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    height: 100px;
+    width: 200px;
+    align-content: center;
+}
+
+#closePopup {
+    margin-top: 15px;
+    padding: 8px 16px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#closePopup:hover {
+    background: #0056b3;
+}
+
+
+.question .answer {
+    position: relative;
+    height: 50px;
+    width: 74px;
+    border-radius: 93% 103% 106% 96%;
+    background: transparent;
+}
+
+#answer1 {
+    top: 630px;
+    left: 458px;
+}
+
+#answer2 {
+    top: 558px;
+    left: 357px;
+}
+
+#answer3 {
+    top: 486px;
+    left: 259px;
+}
+
+#q2-answer1 {
+    top: 910px;
+    left: 456px;
+}
+
+#q2-answer2 {
+    top: 838px;
+    left: 358px;
+}
+
+#q2-answer3 {
+    top: 766px;
+    left: 259px;
+}
+
+#q3-answer1 {
+    top: 1200px;
+    left: 456px;
+}
+
+#q3-answer2 {
+    top: 1128px;
+    left: 358px;
+}
+
+#q3-answer3 {
+    top: 1056px;
+    left: 260px;
+}
+
+.question .answer:hover {
+    box-shadow: 7px 1px 69px gold;
+}
+
+#startBtn:hover {
+    box-shadow: 7px 1px 69px;
+}
+
+.controls {
+    margin: 20px 0;
+
+}
